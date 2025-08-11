@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guías de Bienestar Emocional - UTEZ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar d-none d-lg-block" style="width: 250px; min-height: 100vh;">
+            <div class="d-flex align-items-center p-3 border-bottom">
+                <img src="../assets/images/logo.png" alt="Logo" class="me-2" style="height: 80px; width: auto;">
+                <h5 class="mb-0">Diario de Emociones</h5>
+            </div>
+            
+            <a href="../index.html" class="sidebar-item text-decoration-none">
+                <i class="fas fa-home"></i> Inicio
+            </a>
+            <a href="registro.html" class="sidebar-item text-decoration-none">
+                <i class="fas fa-pen"></i> Registro
+            </a>
+            <a href="dashboard.html" class="sidebar-item text-decoration-none">
+                <i class="fas fa-chart-line"></i> Dashboard
+            </a>
+            <a href="guias.html" class="sidebar-item text-decoration-none active">
+                <i class="fas fa-book"></i> Guías
+            </a>
+            <a href="herramientas.html" class="sidebar-item text-decoration-none">
+                <i class="fas fa-tools"></i> Herramientas
+            </a>
+            <a href="ayuda.html" class="sidebar-item text-decoration-none">
+                <i class="fas fa-hands-helping"></i> Ayuda
+            </a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-grow-1 pattern-bg">
+            <!-- Mobile nav -->
+            <nav class="navbar navbar-expand-lg d-lg-none">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="../assets/images/logo.png" alt="Logo" style="height: 24px; width: auto; margin-right: 8px;"> Diario de Emociones</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="registro.html">Registro</a></li>
+                            <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="guias.html">Guías</a></li>
+                            <li class="nav-item"><a class="nav-link" href="herramientas.html">Herramientas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="ayuda.html">Ayuda</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Main content container -->
+            <div class="container p-4">
+                <!-- Banner similar a las imágenes -->
+                <div class="card mb-4">
+                    <div class="card-body p-0">
+                        <div class="banner">
+                            <div class="banner-content text-center p-3">
+                                <div>
+                                    <h4 class="banner-logo mb-0">Guías de Uso</h4>
+                                    <p class="text-white mb-0">Aprende a usar el Diario de Emociones</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Introducción -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="mb-3">¿Cómo usar el Diario de Emociones?</h5>
+                        <p>El Diario de Emociones es una herramienta personal y anónima que te ayuda a registrar, entender y manejar tus emociones. Aquí te explicamos cómo sacar el máximo provecho de cada sección:</p>
+                    </div>
+                </div>
+
+                <!-- Tarjetas de guías -->
+                <div class="row">
+                    <!-- Guía 1: Inicio -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="me-3" style="width: 50px; height: 50px; background-color: var(--alerta-suave); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                                        <i class="fas fa-home" style="font-size: 24px; color: var(--naranja-principal);"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0">Página de Inicio</h5>
+                                        <small class="text-muted">Registro rápido</small>
+                                    </div>
+                                </div>
+                                <p>Utiliza los botones de emociones en la página principal para hacer un registro rápido de cómo te sientes en el momento. Es perfecto para un seguimiento diario básico.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-light text-dark">Básico</span>
+                                    <a href="../index.html" class="btn btn-sm btn-outline-primary">Ir al inicio</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Guía 2: Registro -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="me-3" style="width: 50px; height: 50px; background-color: var(--alerta-suave); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                                        <i class="fas fa-pen" style="font-size: 24px; color: var(--naranja-principal);"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0">Registro Detallado</h5>
+                                        <small class="text-muted">Análisis completo</small>
+                                    </div>
+                                </div>
+                                <p>Crea registros completos donde puedes describir la situación, tus pensamientos y reflexiones. Incluye la intensidad de la emoción para un mejor seguimiento.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-light text-dark">Intermedio</span>
+                                    <a href="registro.html" class="btn btn-sm btn-outline-primary">Crear registro</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Guía 3: Dashboard -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="me-3" style="width: 50px; height: 50px; background-color: var(--alerta-suave); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                                        <i class="fas fa-chart-line" style="font-size: 24px; color: var(--naranja-principal);"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0">Dashboard</h5>
+                                        <small class="text-muted">Visualiza tus patrones</small>
+                                    </div>
+                                </div>
+                                <p>Revisa gráficas y estadísticas de tus registros emocionales. Identifica patrones, emociones frecuentes y tu progreso a lo largo del tiempo.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-light text-dark">Avanzado</span>
+                                    <a href="dashboard.html" class="btn btn-sm btn-outline-primary">Ver dashboard</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Guía 4: Herramientas -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="me-3" style="width: 50px; height: 50px; background-color: var(--alerta-suave); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                                        <i class="fas fa-tools" style="font-size: 24px; color: var(--naranja-principal);"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0">Herramientas</h5>
+                                        <small class="text-muted">Técnicas de bienestar</small>
+                                    </div>
+                                </div>
+                                <p>Accede a ejercicios de respiración, técnicas de pensamiento positivo y diarios de gratitud para mejorar tu bienestar emocional.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-light text-dark">Práctico</span>
+                                    <a href="herramientas.html" class="btn btn-sm btn-outline-primary">Explorar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Guía 5: Privacidad -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="me-3" style="width: 50px; height: 50px; background-color: var(--alerta-suave); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                                        <i class="fas fa-shield-alt" style="font-size: 24px; color: var(--naranja-principal);"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0">Privacidad</h5>
+                                        <small class="text-muted">Datos seguros</small>
+                                    </div>
+                                </div>
+                                <p>Todos tus datos se guardan localmente en tu navegador. La aplicación es completamente anónima y no requiere cuenta de usuario.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-light text-dark">Importante</span>
+                                    <span class="text-muted small">Solo en tu dispositivo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Guía 6: Ayuda -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="me-3" style="width: 50px; height: 50px; background-color: var(--alerta-suave); border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                                        <i class="fas fa-hands-helping" style="font-size: 24px; color: var(--naranja-principal);"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0">Ayuda Profesional</h5>
+                                        <small class="text-muted">Soporte especializado</small>
+                                    </div>
+                                </div>
+                                <p>Si necesitas ayuda profesional, puedes contactar al servicio psicopedagógico de UTEZ a través de la sección de ayuda.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-light text-dark">Apoyo</span>
+                                    <a href="ayuda.html" class="btn btn-sm btn-outline-primary">Solicitar ayuda</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="mb-1">© 2025 Universidad Tecnológica Emiliano Zapata del Estado de Morelos</p>
+                    <small class="text-muted">Plataforma de Bienestar Emocional Estudiantil</small>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <small>
+                        <i class="fas fa-phone me-1"></i> 777 368 1165<br>
+                        <i class="fas fa-link me-1"></i> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbHway1TZ-PBDEkudxVHaPPcs902NCae1l6R3lg-8UNa3PjA/formResponse" target="_blank" class="text-white">Ayuda psicopedagógica</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/sidebar.js"></script>
+    <script>
+        // Initialize sidebar for guias page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mark guias as active in sidebar
+            const sidebarItems = document.querySelectorAll('.sidebar-item');
+            sidebarItems.forEach(item => {
+                if (item.href.includes('guias.html')) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

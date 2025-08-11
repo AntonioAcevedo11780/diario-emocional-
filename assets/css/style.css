@@ -1,0 +1,549 @@
+:root {
+    /* Paleta de colores principal */
+    --naranja-principal: #E67E22; /* Naranja como color principal */
+    --naranja-claro: #F39C12;     /* Naranja claro para hover */
+    --naranja-oscuro: #D35400;    /* Naranja oscuro para elementos seleccionados */
+    --neutro-oscuro: #34495E;     /* Gris oscuro casi azulado para texto y fondos oscuros */
+    --neutro-medio: #7F8C8D;      /* Gris medio para elementos secundarios */
+    --neutro-claro: #ECF0F1;      /* Gris muy claro para fondos */
+    --neutro-blanco: #FFFFFF;     /* Blanco para contraste */
+    --alerta-suave: #FEF5E7;      /* Fondo naranja muy suave para alertas */
+    
+    /* Colores para emociones */
+    --emocion-feliz: #2ECC71;     /* Verde para felicidad */
+    --emocion-calmado: #3498DB;   /* Azul para calma */
+    --emocion-ansioso: #F1C40F;   /* Amarillo para ansiedad */
+    --emocion-triste: #9B59B6;    /* Púrpura para tristeza */
+    --emocion-enojado: #E74C3C;   /* Rojo para enojo */
+    --emocion-confundido: #95A5A6; /* Gris para confusión */
+}
+
+body {
+    background-color: var(--neutro-claro);
+    color: var(--neutro-oscuro);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Banner superior */
+.banner {
+    background-image: url('../img/pattern-bg.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(52, 73, 94, 0.8);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+}
+
+.banner-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--naranja-principal);
+    margin-bottom: 0;
+}
+
+/* Navbar personalizado */
+.navbar {
+    background-color: var(--neutro-oscuro) !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    color: var(--naranja-principal) !important;
+    font-weight: 600;
+}
+
+.nav-link {
+    color: var(--neutro-claro) !important;
+}
+
+.nav-link:hover {
+    color: var(--naranja-claro) !important;
+}
+
+/* Contenedores principales */
+.container {
+    max-width: 1140px;
+}
+
+/* Tarjetas */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--neutro-blanco);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    background-color: var(--neutro-blanco);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    font-weight: 600;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: var(--naranja-principal) !important;
+    border-color: var(--naranja-principal) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--naranja-oscuro) !important;
+    border-color: var(--naranja-oscuro) !important;
+}
+
+.btn-outline-primary {
+    color: var(--naranja-principal) !important;
+    border-color: var(--naranja-principal) !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--naranja-principal) !important;
+    color: white !important;
+}
+
+/* Botones de emociones */
+.btn-emocion-feliz {
+    color: var(--emocion-feliz) !important;
+    border-color: var(--emocion-feliz) !important;
+}
+
+.btn-emocion-feliz:hover {
+    background-color: var(--emocion-feliz) !important;
+    color: white !important;
+}
+
+.btn-emocion-calmado {
+    color: var(--emocion-calmado) !important;
+    border-color: var(--emocion-calmado) !important;
+}
+
+.btn-emocion-calmado:hover {
+    background-color: var(--emocion-calmado) !important;
+    color: white !important;
+}
+
+.btn-emocion-ansioso {
+    color: var(--emocion-ansioso) !important;
+    border-color: var(--emocion-ansioso) !important;
+}
+
+.btn-emocion-ansioso:hover {
+    background-color: var(--emocion-ansioso) !important;
+    color: white !important;
+}
+
+.btn-emocion-triste {
+    color: var(--emocion-triste) !important;
+    border-color: var(--emocion-triste) !important;
+}
+
+.btn-emocion-triste:hover {
+    background-color: var(--emocion-triste) !important;
+    color: white !important;
+}
+
+.btn-emocion-enojado {
+    color: var(--emocion-enojado) !important;
+    border-color: var(--emocion-enojado) !important;
+}
+
+.btn-emocion-enojado:hover {
+    background-color: var(--emocion-enojado) !important;
+    color: white !important;
+}
+
+.btn-emocion-confundido {
+    color: var(--emocion-confundido) !important;
+    border-color: var(--emocion-confundido) !important;
+}
+
+.btn-emocion-confundido:hover {
+    background-color: var(--emocion-confundido) !important;
+    color: white !important;
+}
+
+/* Elementos de emociones */
+#registroRapido button {
+    padding: 15px 5px;
+    transition: all 0.3s ease;
+    min-height: 80px;
+}
+
+/* Responsividad mejorada */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem !important;
+    }
+    
+    .card {
+        margin-bottom: 1rem !important;
+    }
+    
+    .banner {
+        padding: 20px 15px !important;
+    }
+    
+    .banner-content h2,
+    .banner-content h4 {
+        font-size: 1.5rem !important;
+    }
+    
+    .banner-content p {
+        font-size: 0.9rem !important;
+    }
+    
+    #registroRapido button {
+        padding: 10px 5px;
+        min-height: 70px;
+        font-size: 0.85rem;
+    }
+    
+    .btn-emocion-feliz, .btn-emocion-calmado, .btn-emocion-ansioso,
+    .btn-emocion-triste, .btn-emocion-enojado, .btn-emocion-confundido {
+        margin-bottom: 0.5rem;
+    }
+    
+    .table-responsive {
+        font-size: 0.85rem;
+    }
+    
+    .nav-tabs .nav-link {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.9rem;
+    }
+    
+    .display-5 {
+        font-size: 2rem !important;
+    }
+    
+    footer {
+        text-align: center !important;
+    }
+    
+    footer .col-md-4 {
+        text-align: center !important;
+        margin-top: 1rem;
+    }
+    
+    /* Mejoras específicas para formularios en móviles */
+    .form-control, .form-select {
+        font-size: 16px !important; /* Previene zoom en iOS */
+    }
+    
+    /* Mejoras para tabla de dashboard en móviles */
+    .table th, .table td {
+        padding: 0.5rem 0.25rem;
+        font-size: 0.8rem;
+    }
+    
+    /* Mejoras para autoevaluación en móviles */
+    .form-check-label {
+        font-size: 0.9rem;
+    }
+    
+    .progress {
+        height: 8px !important;
+    }
+    
+    /* Mejoras para herramientas en móviles */
+    #circuloRespiracion {
+        width: 120px !important;
+        height: 120px !important;
+        font-size: 0.9rem !important;
+    }
+    
+    .tab-content {
+        padding: 1rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-content h2,
+    .banner-content h4 {
+        font-size: 1.25rem !important;
+    }
+    
+    #registroRapido button {
+        min-height: 60px;
+        font-size: 0.8rem;
+    }
+    
+    .btn {
+        font-size: 0.85rem;
+    }
+    
+    .card-body {
+        padding: 1rem !important;
+    }
+    
+    .nav-tabs .nav-link {
+        padding: 0.4rem 0.5rem;
+        font-size: 0.8rem;
+    }
+    
+    /* Hacer que las cards estadísticas del dashboard sean más compactas */
+    .display-5 {
+        font-size: 1.5rem !important;
+    }
+    
+    /* Ajustar espaciado en pantallas muy pequeñas */
+    .col-6, .col-md-2 {
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Mejorar legibilidad de botones de emociones */
+    .btn-emocion-feliz, .btn-emocion-calmado, .btn-emocion-ansioso,
+    .btn-emocion-triste, .btn-emocion-enojado, .btn-emocion-confundido {
+        border-width: 2px !important;
+        font-weight: 600 !important;
+    }
+    
+    /* Ajustar elementos del círculo de respiración */
+    #circuloRespiracion {
+        width: 100px !important;
+        height: 100px !important;
+        font-size: 0.8rem !important;
+    }
+    
+    /* Mejorar controles de herramientas */
+    .form-range {
+        height: 8px;
+    }
+    
+    /* Ajustar tabla para pantallas muy pequeñas */
+    .table-responsive table {
+        min-width: 600px; /* Permite scroll horizontal */
+    }
+}
+
+/* Mejoras para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .sidebar {
+        width: 200px !important;
+    }
+    
+    .container {
+        padding: 2rem !important;
+    }
+}
+
+/* Alertas */
+.alert-info {
+    background-color: var(--alerta-suave);
+    border-color: var(--naranja-claro);
+    color: var(--naranja-oscuro);
+}
+
+/* Footer */
+footer {
+    background-color: var(--neutro-oscuro) !important;
+}
+
+/* Estilos para la barra lateral */
+.sidebar {
+    background-color: var(--neutro-blanco);
+    border-right: 1px solid rgba(0,0,0,0.05);
+    height: 100%;
+}
+
+.sidebar-item {
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    color: var(--neutro-oscuro);
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+}
+
+.sidebar-item:hover {
+    background-color: var(--alerta-suave);
+    color: var(--naranja-principal);
+    border-left: 3px solid var(--naranja-principal);
+    text-decoration: none;
+}
+
+.sidebar-item.active {
+    background-color: var(--alerta-suave);
+    color: var(--naranja-principal);
+    border-left: 3px solid var(--naranja-principal);
+    font-weight: 600;
+}
+
+.sidebar-item i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+/* Estilos para tablas de datos */
+.table {
+    background-color: var(--neutro-blanco);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: var(--neutro-claro);
+    color: var(--neutro-oscuro);
+    border-bottom: 2px solid var(--naranja-claro);
+}
+
+/* Estado de los elementos */
+.status-badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.status-pending {
+    background-color: var(--naranja-claro);
+    color: white;
+}
+
+.status-closed {
+    background-color: var(--neutro-medio);
+    color: white;
+}
+
+/* Fondo con patrón para admin panel */
+.pattern-bg {
+    background-color: var(--neutro-claro);
+    background-image: url('../img/leaf-pattern.png');
+    background-size: 200px;
+    background-repeat: repeat;
+    position: relative;
+}
+
+.pattern-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: -1; /* Ensure this stays behind content */
+    pointer-events: none; /* Prevent it from intercepting clicks */
+}
+
+/* Filtros y ordenamiento */
+.filter-controls {
+    background-color: var(--neutro-blanco);
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+}
+
+.filter-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    background-color: var(--neutro-claro);
+    border: none;
+    border-radius: 4px;
+    color: var(--neutro-oscuro);
+    font-size: 0.9rem;
+    margin-right: 8px;
+}
+
+.filter-btn i {
+    margin-left: 5px;
+}
+
+/* Estructura para que el footer siempre quede abajo */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-wrapper {
+    flex: 1 0 auto;
+}
+
+/* Estilos mejorados para el footer */
+footer {
+    flex-shrink: 0;
+    background-color: var(--neutro-oscuro) !important;
+    color: var(--neutro-claro);
+    padding: 1.5rem 0;
+    width: 100%;
+    border-top: 5px solid var(--naranja-principal);
+}
+
+footer .text-muted {
+    color: #adb5bd !important;
+}
+
+footer a {
+    color: var(--naranja-claro);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--naranja-principal);
+    text-decoration: underline;
+}
+
+/* Mejora en la legibilidad del footer */
+footer .container {
+    padding: 0 1rem;
+}
+
+footer .footer-brand {
+    color: var(--naranja-principal);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+footer .footer-divider {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin: 1rem 0;
+}
+
+/* Mejora estructura general */
+.main-container {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ajustes para el patrón de fondo */
+.pattern-bg {
+    position: relative;
+    min-height: 100%;
+}
